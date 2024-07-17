@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <RootNamespace>IziHardGames.Libs.Tests</RootNamespace>
+        <Company>IziHardGames</Company>
+        <ProjectGuid></ProjectGuid>
+        <IsTestProject>true</IsTestProject>
+        <ProjectGuid>11380234-c0d5-47cc-a126-3b5dbb126c7c</ProjectGuid>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="DeepCloner" Version="0.10.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Reference Include="Microsoft.AspNetCore.TestHost">
+        </Reference>
+    </ItemGroup>
+
+</Project>

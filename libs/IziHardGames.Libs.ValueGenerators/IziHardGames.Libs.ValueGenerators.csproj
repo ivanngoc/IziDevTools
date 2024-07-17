@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>IziHardGames.TestLibs.ValueGenerators</RootNamespace>
+    <Company>IziHardGames</Company>
+    <ProjectGuid></ProjectGuid>
+    <ExcludeCPM>true</ExcludeCPM>
+    <ProjectGuid>dc3d5e61-4349-4b8f-a02d-a2805d485abc</ProjectGuid>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageDescription>Value Generators for testing and more</PackageDescription>
+    <PackageId>IziHardGames.ValueGenerators</PackageId>
+    <PackageTags>Mocking; Dummy;</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.1</Version>
+    <RepositoryUrl>https://dummy.com</RepositoryUrl>
+    <PackageProjectUrl>https://dummy.com/-/packages/416</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IziHardGames.Libs.Reflections\IziHardGames.Libs.Reflections.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lorem.Universal.Net" Version="4.0.80" />
+  </ItemGroup>
+</Project>

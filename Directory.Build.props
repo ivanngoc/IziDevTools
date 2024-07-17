@@ -1,0 +1,7 @@
+<Project>
+    <PropertyGroup>
+        <BaseOutputPath>$(PATH_DEVTOOLS_CHAN_IVAN)\$(SolutionName)\</BaseOutputPath>
+        <MyLocalNugetRegistryPath>$(MY_NUGET_REGISTRY)/</MyLocalNugetRegistryPath>
+        <SolutionName>$(SolutionDir)</SolutionName>
+    </PropertyGroup>
+</Project>

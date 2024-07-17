@@ -1,0 +1,61 @@
+{
+  "Id": "3ae0334a-ab58-470c-9af3-ddb95eb52f73",
+  "ValueAsStringNull": "81295900-cb7c-43c4-982e-6ecc44eeacb5",
+  "ValueAsString": "b8d2ea6c-428a-4b70-aed4-68f2d811b216",
+  "ValueAsLong": 0,
+  "NestedModel0Navigation": {
+    "NestedModel0Id": "be0df865-f400-4bb6-bc61-083da72c3ef9",
+    "NestedModel1Navigation": {
+      "NestedModel1Id": "2ed16061-bd89-4c9c-8593-f18100236e92",
+      "ValueAsFloat": 0,
+      "ValueAsIntNull": 0,
+      "NestedModel2NullNavigation": {
+        "NestedModel2Id": "28a5616b-6911-4af8-a6ab-e82753f914be",
+        "ValueAsString": "de8e8ee8-8cb7-4ff2-a5a1-a12646d1003b",
+        "ValueAsDateTime": "0001-01-01T00:00:00",
+        "ValueAsDateTimeNull": "0001-01-01T00:00:00",
+        "NestedModel3": [
+          {
+            "Id": "9b1383ab-70af-4d5f-a35e-0d4352c75fb9"
+          },
+          {
+            "Id": "935e9632-44f8-481d-83a1-5c4c6423abde"
+          },
+          {
+            "Id": "dd3127dc-4419-460a-a776-82d5fdd96c4d"
+          }
+        ]
+      },
+      "NestedModel2RequiredNavigation": {
+        "NestedModel2Id": "55af6555-8045-4b15-82c3-2af35c7498d9",
+        "ValueAsString": "56e3bf43-9ef2-4490-b814-ee0a2a4b4602",
+        "ValueAsDateTime": "0001-01-01T00:00:00",
+        "ValueAsDateTimeNull": "0001-01-01T00:00:00",
+        "NestedModel3": [
+          {
+            "Id": "7231e23f-514a-4437-9c2e-c68be670032a"
+          },
+          {
+            "Id": "f031f132-869d-44ce-b1e0-5ab4fbe2defe"
+          },
+          {
+            "Id": "73f2fef2-246c-4efe-a2f8-d50d24314c79"
+          }
+        ]
+      },
+      "NestedModel3Navigations": [
+        {
+          "Id": "29ca7488-f1d3-4d58-9905-c67a9ce5f809"
+        },
+        {
+          "Id": "0a03a169-e74c-4326-992f-2f1d81512630"
+        },
+        {
+          "Id": "77b25d25-62c9-4ed4-93e1-02269f9e78fb"
+        }
+      ]
+    },
+    "MainModelReverse": "3ae0334a-ab58-470c-9af3-ddb95eb52f73"
+  },
+  "MainModelSelf": null
+}

@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RootNamespace>IziHardGames.Libs.ForUnsafe</RootNamespace>
+    <ProjectGuid>eeb7476d-628c-4048-9bb1-598207ed6057</ProjectGuid>
+  </PropertyGroup>
+
+</Project>

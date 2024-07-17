@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsTestProject>true</IsTestProject>
+        <RootNamespace>IziHardGames.Libs.AspNet.Tester</RootNamespace>
+        <ProjectGuid>098b4849-b567-4c09-b335-56a75b717425</ProjectGuid>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\IziHardGames.TestLibs.Methods.Tester\IziHardGames.TestLibs.Methods.Tester.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+    </ItemGroup>
+
+</Project>

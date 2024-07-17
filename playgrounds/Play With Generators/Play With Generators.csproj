@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <RootNamespace>IziHardGames</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <ProjectGuid>aeed867c-b524-47fd-a32d-6dac00119858</ProjectGuid>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\libs\IziHardGames.Libs.ForJson\IziHardGames.Libs.ForJson.csproj" />
+      <ProjectReference Include="..\..\libs\IziHardGames.Libs.ValueGenerators\IziHardGames.Libs.ValueGenerators.csproj" />
+    </ItemGroup>
+
+</Project>

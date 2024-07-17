@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+    <metadata>
+        <id>ChanIvan.IziHardGames.DevTools</id>
+        <version>1.0.1</version>
+        <authors>Chan Ivan</authors>
+        <owners>Owner1;Owner2</owners> <!-- Informational only -->
+        <description>Devtools make life easier</description>
+        <tags>DevTools; Debug;</tags>
+        <!--        <license type="expression">MIT</license>-->
+        <projectUrl>https://gitlab.umnogor.org/ichan/devtoolsforchan</projectUrl>
+        <iconUrl>https://example.com/icon.png</iconUrl>
+    </metadata>
+
+    <files>
+        <file src="{OutputPath}\net8.0\*.dll" target="lib\net8.0"/>
+        <file src="{OutputPath}\netstandard2.1\*.dll" target="lib\netstandard2.1"/>
+    </files>
+</package>

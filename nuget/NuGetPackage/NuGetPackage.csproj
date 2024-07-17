@@ -1,0 +1,95 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Company>IziHardGames</Company>
+        <ProjectGuid>e7992eee-b5e5-464f-8964-93c7c4d8d3d3</ProjectGuid>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <Version>1.0.1</Version>
+        <!--        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>-->
+        <!--        <NuspecFile>DevTools.nuspec</NuspecFile>-->
+        <!--        <PackageOutputPath>$(MY_NUGET_REGISTRY)</PackageOutputPath>-->
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <ProjectReference Include="..\..\libs\IziHardGames.Libs.Http.Shared\IziHardGames.Libs.Http.Shared.csproj" />
+        <ProjectReference Include="..\..\libs\IziHardGames.Libs.PostgreSql\IziHardGames.Libs.PostgreSql.csproj" />
+        <ProjectReference Include="..\..\libs\IziHardGames.Libs.Reflections\IziHardGames.Libs.Reflections.csproj" />
+        <ProjectReference Include="..\..\libs\IziHardGames.Libs.Tasks\IziHardGames.Libs.Tasks.csproj" />
+        <ProjectReference Include="..\..\libs\IziHardGames.Libs.ValueGenerators\IziHardGames.Libs.ValueGenerators.csproj" />
+        <ProjectReference Include="..\..\test-libs\IziHardGames.Libs.Tasks.UnitTest\IziHardGames.Libs.Tasks.UnitTest.csproj" />
+        <ProjectReference Include="..\..\test-libs\IziHardGames.TestLibs.AspNet.Tester\IziHardGames.TestLibs.AspNet.Tester.csproj" />
+        <ProjectReference Include="..\..\test-libs\IziHardGames.TestLibs.Methods.Tester\IziHardGames.TestLibs.Methods.Tester.csproj" />
+        <ProjectReference Include="..\..\test-libs\IziHardGames.TestLibs.Shared\IziHardGames.TestLibs.Shared.csproj" />
+    </ItemGroup>
+
+    <Target Name="PrintBaseOutputPath" AfterTargets="Build">
+        <Message Text="OutputPath: $(OutputPath)" Importance="High" />
+        <Message Text="BaseOutputPath: $(BaseOutputPath)" Importance="High" />
+        <Message Text="BaseIntermediateOutputPath: $(BaseIntermediateOutputPath)" Importance="High" />
+        <Message Text="Configuration: $(Configuration)" Importance="High" />
+        <Message Text="MSBuildProjectExtensionsPath: $(MSBuildProjectExtensionsPath)" Importance="High" />
+        <Message Text="Platform: $(Platform)" Importance="High" />
+        <Message Text="PlatformTarget: $(PlatformTarget)" Importance="High" />
+        <Message Text="TargetFramework: $(TargetFramework)" Importance="High" />
+        <Message Text="SolutionDir: $(SolutionDir)" Importance="High" />
+        <Message Text="SolutionName: $(SolutionName)" Importance="High" />
+        <Message Text="SolutionFileName: $(SolutionFileName)" Importance="High" />
+    </Target>
+
+    <PropertyGroup>
+        <NuspecTemplateFile>DevTools.nuspec.template</NuspecTemplateFile>
+        <NuspecOutputFile>DevTools.nuspec</NuspecOutputFile>
+    </PropertyGroup>
+
+    <Target Name="Chain" AfterTargets="PrintBaseOutputPath">
+        <Message Text="Chain Begin" Importance="High" />
+    </Target>
+
+    <ItemGroup>
+        <MyTextFile Include="Items.txt" />
+        <!--        выбирает все файлы с заданным расширением-->
+        <MyItems Include="*.cs" />
+    </ItemGroup>
+
+    <Target Name="WriteToFile" AfterTargets="PrintBaseOutputPath">
+        <Message Text="WriteToFile file file" Importance="High" />
+
+        <ReadLinesFromFile File="Items.txt">
+            <Output TaskParameter="Lines" ItemName="MyLines111" />
+        </ReadLinesFromFile>
+        <Message Text="WriteToFile File readed" Importance="High" />
+        <!--         Lines="@(MyItems)"- каждая линия это имя файла-->
+        <WriteLinesToFile File="Items.txt" Lines="@(MyLines111->'%(Identity)')" Encoding="Unicode" />
+    </Target>
+
+
+    <Target Name="GenerateMyNuspec" AfterTargets="WriteToFile">
+        <Message Text="AAAAAAAAAAa" Importance="High" />
+        <!--        <ReadLinesFromFile File="/home/user/Documents/Matriks/devtoolsforchan/nuget/NuGetPackage/DevTools.nuspec.template">-->
+        <ReadLinesFromFile File="DevTools.nuspec.template">
+            <Output TaskParameter="Lines" ItemName="Lines0101" />
+        </ReadLinesFromFile>
+
+        <WriteLinesToFile File="DevTools.nuspec" Lines="@(Lines0101-&gt;'%(Identity)'-&gt;Replace('{OutputPath}','$(BaseOutputPath)$(Configuration)'))" Overwrite="true" Encoding="Unicode" />
+        <Message Text="FillTemplate End" Importance="High" />
+    </Target>
+
+    <Target Name="Pack111" AfterTargets="GenerateMyNuspec">
+        <Message Text="Nuget Pack Begin. Output dir: $(MY_NUGET_REGISTRY)" Importance="High" />
+        <!--            <Exec Command="nuget pack $(NuspecOutputFile) -OutputDirectory $(MY_NUGET_REGISTRY) -IncludeReferencedProjects"/>-->
+        <Exec Command="nuget pack $(NuspecOutputFile) -OutputDirectory $(MY_NUGET_REGISTRY)" />
+        <Message Text="Nuget Pack Executed" Importance="High" />
+    </Target>
+
+    <!--<Target Condition="$(Configuration)=='Release'" Name="PublishToGitlab" AfterTargets="Pack111">
+        <Message Text="Publish nuget to gitlab." Importance="High"/>
+        <Exec Command="nuget push $(MY_NUGET_REGISTRY)/ChanIvan.IziHardGames.DevTools.$(Version).nupkg -ConfigFile ../../nuget.config -Source PersonalGitlab"/>
+        <Message Text="Nuget Published" Importance="High"/>
+    </Target>-->
+
+</Project>

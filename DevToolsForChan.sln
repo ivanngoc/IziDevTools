@@ -1,0 +1,137 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FF163561-4B60-456D-B0FF-3D79B2587815}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		easyswitch.sh = easyswitch.sh
+		nuget.config = nuget.config
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{FD98267D-E1F8-4B99-9D08-386D70D9ACBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{661C2078-93CC-4B19-95FF-C16F0BB2F142}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{5F423813-A47A-4FF2-B4EE-A55814FB1C47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Playgrounds", "Playgrounds", "{A2998D07-0713-463C-98D6-4AA560CD0949}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test-libs", "test-libs", "{EDE5C203-F77F-4FB1-9C32-2376DC0A4FE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B7D1BD4F-57DE-4D68-BB8C-129E43D74192}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IziHardGames.Libs.Http.Shared", "libs\IziHardGames.Libs.Http.Shared\IziHardGames.Libs.Http.Shared.csproj", "{77F69899-C202-40D8-BD6B-EA3E62280160}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IziHardGames.Libs.PostgreSql", "libs\IziHardGames.Libs.PostgreSql\IziHardGames.Libs.PostgreSql.csproj", "{39CEAC75-394F-4466-94DC-505454B8D276}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IziHardGames.Libs.Reflections", "libs\IziHardGames.Libs.Reflections\IziHardGames.Libs.Reflections.csproj", "{A2297FE2-A822-4D85-A6BE-90C71142C0D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IziHardGames.Libs.Tasks", "libs\IziHardGames.Libs.Tasks\IziHardGames.Libs.Tasks.csproj", "{A5DF7C31-223D-41C3-92E0-719842457C34}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IziHardGames.Libs.ValueGenerators", "libs\IziHardGames.Libs.ValueGenerators\IziHardGames.Libs.ValueGenerators.csproj", "{DC3D5E61-4349-4B8F-A02D-A2805D485ABC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IziHardGames.Libs.Tasks.UnitTest", "test-libs\IziHardGames.Libs.Tasks.UnitTest\IziHardGames.Libs.Tasks.UnitTest.csproj", "{99D2E808-CD91-4A76-B35F-003E13FF1194}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IziHardGames.TestLibs.AspNet.Tester", "test-libs\IziHardGames.TestLibs.AspNet.Tester\IziHardGames.TestLibs.AspNet.Tester.csproj", "{098B4849-B567-4C09-B335-56A75B717425}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IziHardGames.TestLibs.Methods.Tester", "test-libs\IziHardGames.TestLibs.Methods.Tester\IziHardGames.TestLibs.Methods.Tester.csproj", "{C93EA799-C22F-4AC3-9E0D-97C60567E906}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IziHardGames.TestLibs.Shared", "test-libs\IziHardGames.TestLibs.Shared\IziHardGames.TestLibs.Shared.csproj", "{11380234-C0D5-47CC-A126-3B5DBB126C7C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NuGetPackage", "nuget\NuGetPackage\NuGetPackage.csproj", "{E7992EEE-B5E5-464F-8964-93C7C4D8D3D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IziHardGames.Libs.ForJson", "libs\IziHardGames.Libs.ForJson\IziHardGames.Libs.ForJson.csproj", "{C001866D-3DEB-435D-916A-1F7892916AC7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IziHardGames.Libs.Unsafe", "libs\IziHardGames.Libs.Unsafe\IziHardGames.Libs.Unsafe.csproj", "{EEB7476D-628C-4048-9BB1-598207ED6057}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Play With NuGet Package", "playgrounds\Play With NuGet Package\Play With NuGet Package.csproj", "{20BC3E86-2B75-4FD3-93A5-4ABE549DB390}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Play With Generators", "playgrounds\Play With Generators\Play With Generators.csproj", "{AEED867C-B524-47FD-A32D-6DAC00119858}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77F69899-C202-40D8-BD6B-EA3E62280160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77F69899-C202-40D8-BD6B-EA3E62280160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77F69899-C202-40D8-BD6B-EA3E62280160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77F69899-C202-40D8-BD6B-EA3E62280160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39CEAC75-394F-4466-94DC-505454B8D276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39CEAC75-394F-4466-94DC-505454B8D276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39CEAC75-394F-4466-94DC-505454B8D276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39CEAC75-394F-4466-94DC-505454B8D276}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2297FE2-A822-4D85-A6BE-90C71142C0D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2297FE2-A822-4D85-A6BE-90C71142C0D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2297FE2-A822-4D85-A6BE-90C71142C0D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2297FE2-A822-4D85-A6BE-90C71142C0D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5DF7C31-223D-41C3-92E0-719842457C34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5DF7C31-223D-41C3-92E0-719842457C34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5DF7C31-223D-41C3-92E0-719842457C34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5DF7C31-223D-41C3-92E0-719842457C34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC3D5E61-4349-4B8F-A02D-A2805D485ABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC3D5E61-4349-4B8F-A02D-A2805D485ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC3D5E61-4349-4B8F-A02D-A2805D485ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC3D5E61-4349-4B8F-A02D-A2805D485ABC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99D2E808-CD91-4A76-B35F-003E13FF1194}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99D2E808-CD91-4A76-B35F-003E13FF1194}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99D2E808-CD91-4A76-B35F-003E13FF1194}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99D2E808-CD91-4A76-B35F-003E13FF1194}.Release|Any CPU.Build.0 = Release|Any CPU
+		{098B4849-B567-4C09-B335-56A75B717425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{098B4849-B567-4C09-B335-56A75B717425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{098B4849-B567-4C09-B335-56A75B717425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{098B4849-B567-4C09-B335-56A75B717425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C93EA799-C22F-4AC3-9E0D-97C60567E906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C93EA799-C22F-4AC3-9E0D-97C60567E906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C93EA799-C22F-4AC3-9E0D-97C60567E906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C93EA799-C22F-4AC3-9E0D-97C60567E906}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11380234-C0D5-47CC-A126-3B5DBB126C7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11380234-C0D5-47CC-A126-3B5DBB126C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11380234-C0D5-47CC-A126-3B5DBB126C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11380234-C0D5-47CC-A126-3B5DBB126C7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7992EEE-B5E5-464F-8964-93C7C4D8D3D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7992EEE-B5E5-464F-8964-93C7C4D8D3D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7992EEE-B5E5-464F-8964-93C7C4D8D3D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7992EEE-B5E5-464F-8964-93C7C4D8D3D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C001866D-3DEB-435D-916A-1F7892916AC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C001866D-3DEB-435D-916A-1F7892916AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C001866D-3DEB-435D-916A-1F7892916AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C001866D-3DEB-435D-916A-1F7892916AC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEB7476D-628C-4048-9BB1-598207ED6057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB7476D-628C-4048-9BB1-598207ED6057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB7476D-628C-4048-9BB1-598207ED6057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB7476D-628C-4048-9BB1-598207ED6057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20BC3E86-2B75-4FD3-93A5-4ABE549DB390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20BC3E86-2B75-4FD3-93A5-4ABE549DB390}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20BC3E86-2B75-4FD3-93A5-4ABE549DB390}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20BC3E86-2B75-4FD3-93A5-4ABE549DB390}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEED867C-B524-47FD-A32D-6DAC00119858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEED867C-B524-47FD-A32D-6DAC00119858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEED867C-B524-47FD-A32D-6DAC00119858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEED867C-B524-47FD-A32D-6DAC00119858}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{77F69899-C202-40D8-BD6B-EA3E62280160} = {FD98267D-E1F8-4B99-9D08-386D70D9ACBC}
+		{39CEAC75-394F-4466-94DC-505454B8D276} = {FD98267D-E1F8-4B99-9D08-386D70D9ACBC}
+		{A2297FE2-A822-4D85-A6BE-90C71142C0D4} = {FD98267D-E1F8-4B99-9D08-386D70D9ACBC}
+		{A5DF7C31-223D-41C3-92E0-719842457C34} = {FD98267D-E1F8-4B99-9D08-386D70D9ACBC}
+		{DC3D5E61-4349-4B8F-A02D-A2805D485ABC} = {FD98267D-E1F8-4B99-9D08-386D70D9ACBC}
+		{99D2E808-CD91-4A76-B35F-003E13FF1194} = {FD98267D-E1F8-4B99-9D08-386D70D9ACBC}
+		{098B4849-B567-4C09-B335-56A75B717425} = {EDE5C203-F77F-4FB1-9C32-2376DC0A4FE2}
+		{C93EA799-C22F-4AC3-9E0D-97C60567E906} = {EDE5C203-F77F-4FB1-9C32-2376DC0A4FE2}
+		{11380234-C0D5-47CC-A126-3B5DBB126C7C} = {EDE5C203-F77F-4FB1-9C32-2376DC0A4FE2}
+		{E7992EEE-B5E5-464F-8964-93C7C4D8D3D3} = {5F423813-A47A-4FF2-B4EE-A55814FB1C47}
+		{C001866D-3DEB-435D-916A-1F7892916AC7} = {FD98267D-E1F8-4B99-9D08-386D70D9ACBC}
+		{EEB7476D-628C-4048-9BB1-598207ED6057} = {FD98267D-E1F8-4B99-9D08-386D70D9ACBC}
+		{20BC3E86-2B75-4FD3-93A5-4ABE549DB390} = {A2998D07-0713-463C-98D6-4AA560CD0949}
+		{AEED867C-B524-47FD-A32D-6DAC00119858} = {A2998D07-0713-463C-98D6-4AA560CD0949}
+	EndGlobalSection
+EndGlobal

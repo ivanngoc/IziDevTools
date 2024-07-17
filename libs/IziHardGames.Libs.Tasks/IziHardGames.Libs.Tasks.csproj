@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ProjectGuid></ProjectGuid>
+        <RootNamespace>IziHardGames.Libs.ForTasks</RootNamespace>
+        <Authors>Chan Ivan</Authors>
+        <Company>IziHardGames</Company>
+        <ProjectGuid>a5df7c31-223d-41c3-92e0-719842457c34</ProjectGuid>
+    </PropertyGroup>
+</Project>

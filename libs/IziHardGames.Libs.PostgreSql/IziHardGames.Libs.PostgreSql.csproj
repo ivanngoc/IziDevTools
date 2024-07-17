@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>IziHardGames.Libs.ForPostgres</RootNamespace>
+    <ProjectGuid>39ceac75-394f-4466-94dc-505454b8d276</ProjectGuid>
+  </PropertyGroup>
+
+</Project>

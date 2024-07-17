@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <ProjectGuid></ProjectGuid>
+        <Company>IziHardGames</Company>
+        <ExcludeCPM>true</ExcludeCPM>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <ProjectGuid>a2297fe2-a822-4d85-a6be-90c71142c0d4</ProjectGuid>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageDescription>Reflections library</PackageDescription>
+        <PackageId>IziHardGames.Libs.Reflections</PackageId>
+        <PackageTags>Reflection;</PackageTags>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Version>0.0.1</Version>
+        <RepositoryUrl>https://dummy.com</RepositoryUrl>
+    </PropertyGroup>
+</Project>

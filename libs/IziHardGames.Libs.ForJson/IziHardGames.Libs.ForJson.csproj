@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>IziHardGames.Libs.ForJson</RootNamespace>
+    <ProjectGuid>{77f69899-c202-40d8-bd6b-ea3e62280160}</ProjectGuid>
+  </PropertyGroup>
+
+</Project>

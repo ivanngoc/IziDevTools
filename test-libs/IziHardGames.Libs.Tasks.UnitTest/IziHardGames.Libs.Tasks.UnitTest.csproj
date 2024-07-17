@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+        <RootNamespace>IziHardGames.Lib.Tasks.UnitTest</RootNamespace>
+        <ProjectGuid>99d2e808-cd91-4a76-b35f-003e13ff1194</ProjectGuid>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\libs\IziHardGames.Libs.Tasks\IziHardGames.Libs.Tasks.csproj" />
+    </ItemGroup>
+
+</Project>

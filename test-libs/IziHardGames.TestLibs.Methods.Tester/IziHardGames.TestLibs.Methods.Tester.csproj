@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsTestProject>true</IsTestProject>
+        <RootNamespace>IziHardGames.Libs.Methods.Tester</RootNamespace>
+        <ProjectGuid>c93ea799-c22f-4ac3-9e0d-97c60567e906</ProjectGuid>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\libs\IziHardGames.Libs.ValueGenerators\IziHardGames.Libs.ValueGenerators.csproj" />
+    </ItemGroup>
+
+</Project>
